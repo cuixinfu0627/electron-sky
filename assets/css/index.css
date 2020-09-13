@@ -1,0 +1,1307 @@
+@charset "utf-8";
+/*投票/拉票弹窗*/
+.set-font-size-16{
+    font-size: 16px;
+}
+.set-margin-10{
+    padding:10px 12px;
+}
+.ballot {
+    border-radius: 10px;
+    color: #666;
+    line-height: 1;
+}
+.ballot .ballot-pic {
+    width: 120px;
+    height: 120px;
+    margin:0 auto;
+    border-radius: 50%;
+}
+.ballot .ballot-cont h1,.ballot .ballot-cont h3,.ballot .ballot-cont p {
+    width: 100%;
+    line-height: 1.6;
+    letter-spacing: 2px;
+}
+.ballot .ballot-cont h3 {
+    font-size: 18px;
+    color: #000;    
+
+}
+.ballot .ballot-cont h1 {
+    color: #E87E04;
+    font-weight: 600;
+    line-height: 1.6;
+    font-size: 30px;
+
+}
+.ballot p {
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 0px;
+}
+.ballot hr{
+    margin: 15px 0;
+    border-top: 1px #dadada solid;
+}
+.ballot .ballot-close {
+    width: 40px;
+}
+/*顶部导航*/
+.btn-close {
+    width: 8%;
+    right: 4%;
+}
+.nav {
+    background-color: rgba(0,0,0,.8);
+    height: 30px;
+    overflow-y: hidden;
+    border: none;
+}
+.nav>li {
+    width: 25%;
+}
+.nav>li>a {
+    color: #aeaeae;
+    font-size: 14px;
+    line-height: 1;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #dc941b;
+    font-size: 16px;
+    background-color:transparent;
+    border: none;
+}
+.nav-tabs>li>a:hover {
+    border-color:transparent;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    font-size: 16px;
+    text-decoration: none;
+    color: #dc941b;
+    background-color:transparent;
+}
+
+/*#ranking .ranking-top {
+        background-position: center -24.5%!important;
+}
+#ranking .ranking-top .top-list {
+        margin-top: 50px!important;
+}*/
+.form-control{
+    height:40px!important;
+}
+.img-yz,.input-group-addon {
+    padding: 0 12px!important;
+    background-color: #fff!important;
+}
+.img-yz img{
+    height: 32px!important;
+}
+
+#result h1,#result h2{
+    text-shadow: 0px 5px 30px #2f2f2f;
+    color: #fff!important;
+}
+
+.btn-hei img {
+     border-radius: 0;
+    webkit-animation: breathe 1600ms ease infinite;
+    -moz-animation: breathe 1600ms ease infinite;
+    -o-animation: breathe 1600ms ease infinite;
+    animation: breathe 1600ms ease infinite;
+}
+@-webkit-keyframes breathe{
+    60%{opacity:.6;}
+    80%{opacity:.8;}
+    100%{opacity:1;}    
+}
+@-moz-keyframes breathe{
+    60%{opacity:.6;}
+    80%{opacity:.8;}
+    100%{opacity:1;}
+}
+@-o-keyframes breathe{
+    60%{opacity:.6;}
+    80%{opacity:.8;}
+    100%{opacity:1;}
+}
+@keyframes breathe{
+    60%{opacity:.6;}
+    80%{opacity:.8;}
+    100%{opacity:1;}
+}
+
+html,body {
+    margin: 0 auto;
+    padding: 0;
+    color: #666;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 100%;
+    background-color: #000;
+}
+
+p {
+    line-height: 1;
+    font-size: 1.6rem;
+    letter-spacing: .4px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 1;
+}
+
+a {
+    color: #ea9801;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+a:hover,
+a:active,
+a:focus,
+a:visited,
+a.active {
+    color: #ea9801;
+    text-decoration: none;
+}
+
+body>.container-fluid,
+body>.container-fluid>.row {
+    height: 100%;
+}
+
+td,
+th {
+    font-size: 1em!important;
+}
+.link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.link a {
+    display: block;
+    width: 100%;
+    height: 100%; 
+    text-indent: -9999em;
+}
+.border-solid {
+    border: 1px solid rgb(35, 35, 35);
+    padding: 2px;
+}
+/*菜单*/
+.menu {
+    background:#000 url(../images/menu-bg.jpg) center bottom no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    padding: 0;
+    height: 7.8vh;
+}
+
+.menu li:first-child {
+    border-left: 0;
+}
+.menu li {
+    height: 100%;
+}
+.menu li a {
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    height: 100%; 
+    text-indent: -9999em;
+}
+.menu li.active {
+    background:url(../images/menu-active.png) center bottom no-repeat;
+    background-size: 100%;
+}
+/*首页*/
+body#main,body#relive,body#ranking,body#info,body#vote,body#help,body#all,body#all-in,body#week,body#group,body#login{
+    background:#000 url(../images/main-bg.jpg) center top no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.long {
+    height: 5vh;
+}
+body#main .btn-prize {
+    left: 15px;
+    top: 2px;
+}
+body#main .btn-suggest {
+    right: 15px;
+    top: 2px;
+}
+body#main .btn-prize a.btn,body#main .btn-suggest a.btn {
+    padding: 2px 10px;
+    font-size: 12px;
+}
+body#main .sugges-cont p {
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 0px;
+}
+body#main .sugges-cont {
+    height: 420px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+body#main .sugges-cont h3 {
+    font-weight: bold;
+}
+body#main .sugges-cont p strong {
+    line-height: 2.8;
+    color: #000;
+}
+body#main .sugges-cont p span {
+    color: #E87E04;
+}
+/*全部热门选手*/
+body#all {
+    width: 100%;
+    height: 100%;
+}
+.vs-wrapper.all-top {
+    z-index: 100;
+}
+.all-top {
+    background:url(../images/all-top.png) center 20px no-repeat;
+    background-size: 100%;
+    padding-top: 23vh;
+}
+/*.all-top {
+    background:#000 url(../images/all-top.png) center top no-repeat;
+    background-size: 100%;
+    height: 11vh;
+    padding-top: 2.4vh 10px 0;
+}*/
+.all-top select.form-control {
+    appearance:none;/*去除系统默认的样式*/
+   -moz-appearance:none;/*去除系统默认的样式*/
+    -webkit-appearance:none; /*去除系统默认的样式*/
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 1)!important;   /* 点击高亮的颜色*/
+    background-color: rgba(0, 0, 0, 1)!important;
+    -webkit-background-color: rgba(0, 0, 0, 1)!important;
+    border: 1px solid #dc9919;
+    border-radius: 0;
+    width: 43%;
+    margin-right: 5%;
+    height: 32px;
+    padding: 4px 14px;
+    color: #dc9919;
+    background: url(../images/arrow.png) 95% 50% no-repeat;
+    background-size: 8%;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+
+.all-list {
+    padding:0 2%;
+    margin:5% auto 0;
+}
+.all-list li {
+    position: relative;    
+    width: 44.5%;
+    height: auto;
+    padding: 0;
+    float: left;
+    margin:0 2.5% 5%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #dc9919;
+    clear: right;
+}
+
+.all-info {
+    background-color: rgba(0, 0, 0, .5);
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.all-info h4 {
+    font-size: 14px;
+    padding-top: 3px;
+}
+.all-info h3 {
+    font-size: 18px;
+    padding-top: 3px;
+    line-height: 1.6;
+}
+.all-info h4 small{
+    font-size: 12px;
+    color: #f3c200;
+}
+.all-info a {
+    font-size: 14px;
+    color: #9a2702;
+    background-color: #f3c200;
+    background: -webkit-linear-gradient(left, #cc9b18 , #fef36f)!important;
+    border-radius: 20px;
+    padding: 2px 10px;
+    margin-top: -3px;
+}
+.all-info a.lose {
+    color: #8e8e8e!important;
+    background-color: #3e3e3e!important;
+    background: -webkit-linear-gradient(top, #484848 , #4a4a4a)!important;
+}
+.all-flag {
+    right: 0;
+    background:url(../images/flag.png) center top no-repeat;
+    background-size: 80%;
+}
+.all-flag h5 {
+    font-size: 50%;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.all-link a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999em;
+}
+.all-player img {
+    max-height: 300px;
+}
+/*复活排行榜*/
+.relive-top {
+    background:url(../images/relive-top.png) center top no-repeat;
+    background-size: 100%;
+    padding-top: 28.4vh;
+}
+/*排行榜*/
+.top-list {
+    margin-bottom: 0;
+    padding:0;
+}
+.top-list li {
+    height: 8.5vh;
+    text-align: left;
+    margin-bottom: .4vh;
+    padding: 0;
+    /*border-bottom: 2px solid rgba(220,153,25,.15);*/
+    position: relative;
+    overflow: hidden!important;
+}
+.top-list li .r_link,.top-list li .r_link a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.top-list li .r_link a {
+    text-indent: -9999em;
+}
+.top-list li h1{
+    font-size: 200%;
+    font-weight: bold;
+    line-height: 8.5vh;
+}
+.top-list li h3 {
+    line-height: 8.5vh;
+    font-size: 80%;
+}
+.top-list li.one,.top-list li.two,.top-list li.three {
+    border: 0;
+}
+.top-list li.one h1,.top-list li.two h1,.top-list li.three h1 {
+    color: #fff;
+}
+
+.top-list li.one {
+    background:url(../images/relive-one.jpg) center top no-repeat;
+    background-size: cover;
+}
+.top-list li.two {
+    background:url(../images/relive-two.jpg) center top no-repeat;
+    background-size: cover;
+}
+.top-list li.three {
+    background:url(../images/relive-three.jpg) center top no-repeat;
+    background-size: cover;
+}
+.head {
+    padding-left: 0px!important;
+}
+.head img {
+    margin-top: 1vh;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    border: 2px solid rgb(220, 153, 25);
+}
+
+/*人气排行榜*/
+.ranking-top {
+    background:url(../images/ranking-top.png) center top no-repeat;
+    background-size: 100%;
+    padding-top: 25vh;
+}
+
+#ranking .top-list li.one,#ranking .top-list li.two,#ranking .top-list li.three {
+    position: relative;
+    background: transparent;
+    width: 32%;
+    height: 30vh;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+}
+#ranking .top-list li.one {
+    width: 36%;
+}
+#ranking .top-list li.one .head{
+    padding-top: 6.7vh;
+}
+#ranking .top-list li.one .head img {
+    margin-top: 0vh;
+    width: 16vh;
+    height: 16vh;
+}
+#ranking .top-list li.one .hat{
+    background:url(../images/hat-1.png) center top no-repeat;
+    background-size: 51%;
+    top: 0;
+    height: 9vh;
+    left: 0;
+    right: 0;
+}
+#ranking .top-list li.two .head,#ranking .top-list li.three .head{
+    padding-top: 6.7vh;
+}
+#ranking .top-list li.two .head img,#ranking .top-list li.three .head img {
+    margin-top: 0vh;
+    width: 14vh;
+    height: 14vh;
+}
+#ranking .top-list li.two .hat,#ranking .top-list li.three .hat {
+    background-size: 40%!important;
+    top: 20px;
+    height: 7vh;
+    left: 0;
+    right: 0;    
+}
+#ranking .top-list li.two .hat{
+    background:url(../images/hat-2.png) center top no-repeat;
+
+}
+#ranking .top-list li.three .hat{
+    background:url(../images/hat-3.png) center top no-repeat;
+}
+
+#ranking .top-list li.one .name {
+    top: 21vh;
+}
+#ranking .top-list li .name {
+    top: 19vh;
+}
+#ranking .top-list li.one .name,#ranking .top-list li.two .name,#ranking .top-list li.three .name,#vote .name {    
+    left: 0;
+    right: 0;
+    margin: 0 20%;
+    text-align: center;
+}
+#ranking .top-list li .name h3,#vote .name h3 {
+    background-color: #cf9e18;
+    background: -webkit-linear-gradient(left, #cc9b18 , #fef36f)!important;
+    border-radius: 20px;
+    line-height: 2;
+    padding: 2px 6px;
+    line-height: 1.2;
+    color: #b84315;
+    font-size: 80%;
+    font-weight: bold;
+
+}
+#ranking .top-list li .name h4 {
+    font-size: 80%;
+    line-height: 1.4;
+}
+#ranking .top-list .col-xs-2,#relive .top-list .col-xs-2 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+#ranking .top-list .col-xs-2 h1,#relive .top-list .col-xs-2 h1{
+    text-align: center;
+    font-size: 160%;
+}
+/*选手资料*/
+.info-top .photo{
+    height: 65vh;
+    overflow-y: hidden;
+}
+.info-top .logo{
+    width: 25%;
+    top: 0;
+}
+.data {
+    background-color: rgba(0, 0, 0, .6);
+    /*background: -webkit-linear-gradient(right, rgba(255, 104, 32, 0.8) , rgba(234, 191, 31, 0.8))!important;*/
+    padding: 6px 0;
+    padding-left:20px; 
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 1.4;
+    min-height: 9vh;
+}
+.data li {
+    width: 20%;
+    padding: 0 1%;
+    float: left;
+}
+.data li:first-child {
+    width: 30%;
+    padding: 0;
+}
+.data li:last-child {
+    width: 25%;
+    padding-left: 1%;
+    text-align: right;
+}
+.state {
+    font-size: 14px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    outline: 0!important;
+    display: inline-block;
+    /*s*/
+    /*background: -webkit-linear-gradient(right, rgba(255, 17, 0, 0.8) , rgba(255, 61, 0, 0.8))!important;*/
+}
+.sex {
+    padding: 1px 8px;
+    font-size: 12px;    
+}
+.motto {
+    background:url(../images/info-motto.png) center top no-repeat;
+    background-size: 101%;
+    padding-bottom: 57px;
+}
+.motto h3 {
+    line-height: 7vh;
+    font-size: 20px;
+    height: 7vh;
+}
+.motto p,.vote p {
+    font-size: 18px;
+    line-height: 1.6;
+    height: auto;
+    margin:15px auto;
+    overflow-y: hidden;
+}
+
+.vote {
+/*    background:url(../images/info-vote.png) center top no-repeat;
+        background-size: 101%;*/
+    min-height: 20vh;
+}
+
+.vote-btn-1 a,.vote-btn-2 a{
+    display: block;
+    width: 100%;
+    height: 100%; 
+    text-indent: -9999em;
+}
+.vote-btn-1 {
+    height: 12vh;
+}
+.vote-btn-2 {
+    height: 6vh;
+    top: 5vh;
+}
+.vote p {
+    margin-bottom: 20px;
+}
+
+/*投票成功*/
+.btn-share a { margin-top: 20px; }
+#vote .head img {
+    margin-top: 1vh;
+    width: 14vh;
+    height: 14vh;
+    border-radius: 50%;
+    border: 2px solid rgb(220, 153, 25);
+}
+#vote .name {    
+    top: 13vh;
+    margin: 0 20%;
+}
+#vote .name h3 {    
+    font-size: 70%;
+    line-height: 1.4;
+}
+/*#vote .margin-top30  {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    height: auto;
+}*/
+#vote .margin-top30 canvas,#vote .margin-top30 img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    height: auto;
+    padding: 3px;
+    background-color: #fff;
+}
+
+/*12.07 Modal窗口 */
+
+.modal {
+    padding-top: 35%;
+}
+.modal label {
+    color: #F7CA18;
+}
+.modal input {
+    border-radius: 0;
+}
+
+.modal .close {
+    text-indent: 0;
+    width: 30px;
+    height: 30px;
+    display: block;
+    opacity: 1;
+}
+.modal .modal-content {
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 20px;
+    border: 2px solid #d3b13c;
+}
+
+.modal .modal-header,
+.modal .modal-body,
+.modal .modal-footer {
+    text-align: center;
+    color: #fff;
+}
+
+.modal .modal-body {
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border: 1px solid rgb(62, 62, 62);
+}
+
+.modal .modal-header {
+    border-bottom: 0;
+}
+
+.modal .modal-footer {
+    border-top: 0;
+}
+.modal .modal-footer a img {
+    padding: 10px;
+}
+.modal-backdrop.in {
+    filter: alpha(opacity=80);
+    opacity: .8;
+}
+.modal-title {
+    font-size: 16px;
+}
+
+/*活动规则*/
+.btn-help img {
+    padding: 10px;
+}
+#help {
+    color: #ebc86c;
+    text-align: left;
+}
+
+#help h4 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+#help p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 5px 0 15px;
+}
+/*场内投票*/
+body#all-in .modal-body p{
+    line-height: 1.6;
+}
+body#all-in .all-top{
+    background: url(../images/today-top.png) center top no-repeat;
+    background-size: 100%;
+    padding-top: 23vh;
+}
+/*群*/
+ body#group .group-top {
+    background: url(../images/head-bg.jpg) center top no-repeat;
+    background-size: 100%;
+    padding-top: 3vh;
+}
+
+.group-name h2 {
+    color: #FFEB3B;
+    font-size: 1.4rem;
+}
+
+.group-name h3 {
+    color: #FFC107;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+/*本场选手*/
+body#result{
+    background: url(../images/result.jpg?v=2) center top no-repeat;
+    background-size: 100%;
+}
+.result-top {
+    padding-top: 2vh;
+}
+.result-top h1 {
+    color: #cfb974;
+    font-size: 42px;
+    line-height: 2;
+}
+.result-top h1:first-child {
+    animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+}
+#bar-chart {
+    margin: 0 auto;
+    width: 100%;
+    height: inherit;
+}
+#bar-chart .graph {
+    
+}
+#bar-chart .bars {
+    height: 100%;
+}
+#bar-chart .bar-group {
+    width: 100%;
+}
+#bar-chart .bar-group .bar {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    animation-duration: 6s;
+    -webkit-animation-duration: 6s;
+    -moz-animation-duration: 6s;
+}
+#bar-chart .stat-1 {
+    background: -webkit-linear-gradient(top,#ff6a00,#91100d);
+    background: -moz-linear-gradient(top,#ff6a00,#91100d);
+    background: -o-linear-gradient(top,#ff6a00,#91100d);
+    background: -ms-linear-gradient(top,#ff6a00,#91100d);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff6a00,endColorstr=#91100d,grandientType=0);
+}
+/*周榜单*/
+
+body#week .week-top {
+/*    background: url(../images/week-top.png) center -10vh no-repeat;
+    background-size: 100%;
+    padding-top: 20vh;*/
+}
+
+.week-top .top-list {
+    color: #FFEB3B;
+/*    margin-top: 70px!important;*/
+}
+
+.week-top .top-list li {
+    height: 8vh;
+    clear: both;
+    text-align: center;
+    padding: 0!important;
+    margin: 0;
+}
+
+.week-top .top-list li div {
+    padding: 0!important;
+}
+
+
+.week-top .top-list li.font-white {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.week-top .top-list li h3 {
+    line-height: 8vh;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.week-top .top-list li h3 span {
+    font-size: 100%;
+    line-height: 1;
+}
+
+.week-top .top-list li h2 {
+    line-height: 8vh;
+    color: #fff;
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+/*小屏幕适配*/
+@media (max-width: 480px) {
+    .modal {
+        width: 100%!important;
+        margin-right: 0!important;
+        margin-left: 0!important;
+        padding-right: 0!important;
+        padding-left: 0!important;
+    }
+    .modal-dialog {
+        width: 98%!important;
+        margin-right: 1%!important;
+        margin-left: 1%!important;
+    }
+    .modal-content {
+        width: 98%!important;
+        margin-right: 1%!important;
+        margin-left: 1%!important;
+    }
+    body#main .sugges-cont {
+        height: 320px;
+        max-height: 400px;
+    }
+}
+
+
+/*小屏幕适配*/
+@media (max-width: 320px) {
+    body *{
+        font-size: 60%!important;
+    }
+    .state {
+        font-size: 12px;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+    }
+    .btn-help img {
+        padding: 5px;
+    }
+    h1 {
+        font-size: 24px!important;
+    }
+    #ranking .top-list li.one .name,
+    #ranking .top-list li.two .name,
+    #ranking .top-list li.three .name,
+    #vote .name {
+        margin: 0 25%;
+    }
+    body#main .btn-prize a.btn,body#main .btn-suggest a.btn {
+    font-size: 70%;
+    }
+    body#main .sugges-cont {
+        height: 222px;
+        max-height: 300px;
+    }
+}
+
+/*横屏 css*/
+@media screen and (orientation: landscape) {
+    body#main, body#relive, body#ranking, body#info, body#vote, body#help, body#all {
+        background: #000;
+    }
+    .long {
+        height: 14vh;
+    }
+/*导航*/
+    .menu {
+        background: #000 url(../images/menu-lx-bg.jpg) center bottom no-repeat;
+        background-size: 100%;
+        height: 13.4vh;
+    }
+/*首页*/
+    #main .margin-top40,
+    #main .margin-top50,    
+    #main .margin-top60 {
+        margin-top: 20px!important;
+    }
+    #main .margin-top40 img,
+    #main .margin-top50 img,
+    #main .margin-top60 img{
+        padding: 0 15%;
+    }
+/*选手*/
+    #all .all-top {
+        background-size: 100%;
+        background-position: center -5.5%;
+        padding-top: 56vh;
+    }
+    #all .all-list {
+        margin-top: 1%;
+    }
+    #all .all-list li {
+        width: 30%;
+        margin: 0 1.6% 3%;
+    }
+    #all .all-top form {
+        position: absolute;
+        top: 10px;
+        width: 65%;
+        right: 0.9%;
+    }
+
+/*人气榜*/
+    .top-list {
+        margin-bottom: 9vh;
+    }
+    .top-list li {
+        height: 13.5vh;
+    }
+    .top-list li h1,.top-list li h3 {
+        line-height: 13.5vh;
+    }
+    .head img {
+        margin-top: 2.5vh;
+        width: 10vh;
+        height: 10vh;
+    }
+    #ranking .ranking-top,#relive .relive-top {
+        background-size: 100%;
+        background-position: center -23.5%;
+        padding-top: 60vh;
+    }
+
+    #ranking .top-list li.one,
+    #ranking .top-list li.two,
+    #ranking .top-list li.three {
+        height: 37vh;
+    }    
+    #ranking .top-list li.one .head img {
+        margin-top: 0vh;
+        width: 30vh;
+        height: 30vh;
+    }
+    #ranking .top-list li.one .hat{
+        background-size: 33%;
+        height: 18vh;
+        top: -23px;
+    }
+    #ranking .top-list li.two .head img,
+    #ranking .top-list li.three .head img {
+        width: 26vh;
+        height: 26vh;
+    }
+    #ranking .top-list li.two .hat,
+    #ranking .top-list li.three .hat {
+        background-size: 30%!important;
+        top: -13px;
+        height: 18vh;
+    }
+    #ranking .top-list li.one .name,
+    #ranking .top-list li.two .name,
+    #ranking .top-list li.three .name,
+    #vote .name {
+        margin: 0 32%;
+    }
+    #ranking .top-list li .name {
+        top: 29vh;
+    }
+    #ranking .top-list li.one .name {
+        top: 33vh;
+    }
+/*规则*/
+    #help .ls-xs-4.margin-top30 {
+        padding:0 6%;
+        margin-top: 20px!important;
+    }
+    #help .margin-top20 {
+        margin-top: 10px!important;
+    }
+    #help h4 {
+        line-height: 1.6;
+    }
+    #help p {
+        line-height: 1.4;
+        margin: 5px 0 10px;
+    }
+
+/*详情*/
+    .info-top .logo {
+        width: 15%;
+        left: 18%;
+    }
+    .motto {
+        background-size: 60%;
+    }
+    .motto h3 {
+        line-height: 2.5;
+        height: 14vh;
+    }
+    .vote {
+        background-size: 60%;
+        min-height: 21vh;
+    }
+    .vote p {
+        min-height: 15vh;
+        overflow-y: hidden;
+        margin: 27px auto;
+    }
+    .vote-btn-1 {
+        height: 19vh;
+    }
+    .vote-btn-2 {
+        height: 11vh;
+        top: 9vh;
+    }
+
+/*modal*/
+    .modal {
+        padding-top: 0%!important;
+    }
+    .modal-dialog {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .modal-footer,.modal-title{
+        padding: 0!important;  
+    }
+    .modal-dialog {
+        margin: 0 auto!important;  
+    }
+    .modal-body{
+    padding: 0 15px!important;  
+    }
+
+/*拉票成功*/
+    #vote .head img {
+        width: 24vh;
+        height: 24vh;
+    }
+    #vote .name {
+        top: 22vh;
+    }
+    #vote .margin-top60{
+        margin-top:20px!important;        
+        padding: 0 9%;
+    }
+    #vote .margin-top40 {
+        margin-top:10px!important;
+        padding: 0 9%;
+    }
+    #vote .margin-top30 {
+        margin-top:20px!important;
+        padding: 0 9%;
+    }
+    #vote .margin-top20 {
+        margin-top:10px!important;
+    }
+    .btn-share {
+        padding: 0 8%;
+    }
+    .btn-share a {
+        margin-top: 10px;
+    }
+    #vote .er {
+        margin-top:20px!important;
+        padding: 0 9%;
+    }
+}
+
+/*后台*/
+body#Last {
+    background-color: #fff;
+}
+label h4 {
+    line-height: 2;
+}
+.border-2 {
+    border-top: 1px solid #ddd;
+}
+.thumbnail {
+    margin-right: 30px;
+}
+.thumbnail h3 {
+    font-size: 80%;
+}
+.thumbnail p {
+    font-size: 60%;
+    line-height: 1.6;
+    text-align: left;
+    margin: 10px 0;
+}
+.label {
+    padding: 5px 8px;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success {
+    color: #fff;
+    background: #26C281!important;
+}
+.label-success {
+    background-color: #26C281!important;
+}
+
+#shop .people-info {
+    height: 48px;
+    line-height: 32px;
+    background-color: #ccc;
+    font-size: 12px;
+    padding: 6px 0;
+    overflow-y: hidden;
+    color: #333;
+}
+#shop .people-info img {
+    margin-right: 10px;
+}
+#shop .people-info div:first-child img {
+    width: 36px;
+    
+}
+#shop .people-info div:last-child img {
+    height: 28px;
+    margin-top: 3px;
+}
+
+/*中奖名单*/
+body#prize {
+    background:#ea8c01  url(/images/prize-list.png) center top no-repeat;
+    background-size: 100%;
+    min-height: 100%;
+    height: auto;
+}
+#prize .prize-top {
+    padding-top: 175px;
+    margin-bottom: 100px;
+}
+#prize .prize-cont {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+#prize .prize-cont .nav {
+    background-color: #ca7800;
+    border-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 40px;
+    margin-bottom: 0px;
+}
+#prize .prize-cont .nav li {
+    width: 50%;
+    height: 40px;
+}
+#prize .prize-cont .nav li a {
+    color: #FFC107;
+    display: block;
+    line-height: 40px;
+    padding:0;
+    font-size: 14px;
+}
+#prize .prize-cont .nav li.active {
+    background-color: #ffe500;
+}
+#prize .prize-cont .nav li.active a{
+    color: #FF5722;
+}
+#prize .prize-list dl,#prize .prize-list ul {
+    padding: 0 6px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#prize .prize-list ul li,#prize .prize-list dl dd {
+    line-height: 3;
+    text-align: left;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+#prize .prize-list ul li {
+    border-bottom: 1px #e8e8e8 solid;
+    font-weight: bold;
+}
+#prize .prize-list dl dd {
+    border-bottom: 1px #e8e8e8 dashed;
+}
+#prize .prize-list dl dd.col-xs-6{
+    color: #ff5722;
+}
+#prize .prize-rule {
+    color: #fff;
+    text-align: left;
+}
+#prize .prize-rule h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+#prize .prize-rule h4 {
+    font-size: 14px;
+}
+#prize .prize-rule p {
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+#prize .prize-cont dl dd.col-xs-12 {
+    text-align: center!important
+}
+@-webkit-keyframes move  
+{  
+    0%{  
+        top:0;  
+    }  
+    100%  
+    {  
+        top:-200px;  
+    }     
+}  
+/*#wrap{ width:500px;height:100px;border:1px solid #000; position:relative;margin:100px auto; }  
+#list{ position:absolute;left:0;top:0;margin:0;padding:0; -webkit-animation:3s move infinite linear; width:200%;}  
+#list li{ list-style:none;width:98px;height:98px;border:1px solid #fff;background:#000; color:#fff; font:50px/98px Arial; text-align:center; float:left;}  
+#wrap:hover #list{ -webkit-animation-play-state:paused;}  
+*/
+#prize .prize-list-sc {
+    width: 100%;
+    height:260px;
+    overflow:hidden;
+    position:relative; 
+}
+#prize .prize-list .prize-list-title {
+    margin-top: 0;
+    padding-top: 0;
+}
+#prize .prize-list .prize-list-sc dl {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left:0;
+    top:0;
+    -webkit-animation:6s move infinite linear;
+}
+
+@media all and (max-width: 320px) {
+    #prize .prize-top {
+        padding-top: 140px;
+    }
+}
+
+
