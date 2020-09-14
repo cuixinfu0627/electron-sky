@@ -1,13 +1,20 @@
-# electron-quick-start
+# electron-sky
 
 
-** 正常操作网址：https://www.jianshu.com/p/a8a7820c8bfd **
-** 特殊操作网址：https://www.jianshu.com/p/b60fe36cbe84 **
+- ** 正常操作网址：https://www.jianshu.com/p/a8a7820c8bfd **
+- ** 特殊操作网址：https://www.jianshu.com/p/b60fe36cbe84 **
+- ** 配置index跳转方式：https://www.jianshu.com/p/8b655d15c6e7?utm_source=oschina-app **
 
+## 主要文件说明：
 - `package.json` - Points to the app's main file and lists its details and dependencies.
 - `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
 - `index.html` - A web page to render. This is the app's **renderer process**.
 
+## 查看版本信息：
+```bash
+   控制台输入：electron
+```
+  
 ## 使用方法：
 ```bash
 cd electron-sky
